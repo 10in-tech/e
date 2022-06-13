@@ -1,3 +1,3 @@
-module 10in.com/e
+module e
 
 go 1.18

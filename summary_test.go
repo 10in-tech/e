@@ -1,19 +1,13 @@
 package e
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
 
-func TestSummaryColunms(t *testing.T) {
+func TestSummaryColumns(t *testing.T) {
 
 	typ, ele, season, ch := Summary.Columns([]int{5, 2, 7, 5}, []int{9, 0, 5, 1})
-
-	fmt.Println(typ)
-	fmt.Println(ele)
-	fmt.Println(season)
-	fmt.Println(ch)
 
 	if !reflect.DeepEqual(typ, []int{0, 4, 1, 0, 1, 2, 4, 0}) {
 		t.Error("五神计算错误")
