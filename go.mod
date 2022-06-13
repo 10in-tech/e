@@ -1,3 +1,3 @@
-module github.com/10in-tech/e
+module e
 
 go 1.18
